@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+
+:root {
+    --green: #15CDCB;
+    --dark: #212226;
+    --white: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+body {
+    padding: 64px 24px;
+    background-color: #071013;
+}
+
+
+body, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+header img {
+    border-radius: 50%;
+    border: 2px solid gray;
+    height: 200px;
+    width: 200px;
+}
+header p {
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(70deg, var(--green) 13%, #61dbe4 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
