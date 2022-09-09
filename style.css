@@ -137,24 +137,17 @@ main div article:hover {
 }
 
 
-@media (max-width: 375px) {
-  html {
-    font-size: 50%;
-  }
-
+/* Media queries */
+@media (max-width: 600px) {
   main {
     width: 100%;
-  }
-
-  main h2 {
-    text-align: center;
   }
 }
 
 @media (max-width: 475px) {
-  html {
+  /* html {
     font-size: 50%;
-  }
+  } */
 
   main {
     width: 100%;
@@ -164,3 +157,18 @@ main div article:hover {
     text-align: center;
   }
 }
+
+@media (max-width: 375px) {
+  /* html {
+    font-size: 50%;
+  } */
+
+  main {
+    width: 100%;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+}
+
