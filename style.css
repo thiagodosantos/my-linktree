@@ -1,90 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-@import url('http://fonts.cdnfonts.com/css/lorjuk');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap");
 
 :root {
-    --green: #15CDCB;
-    --dark: #212226;
-    --white: #fafafa;
+  --green: #15cdcb;
+  --dark: #212226;
+  --white: #fafafa;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    margin: 0;
+html {
+  font-size: 62.5%;
 }
+
+html,
 body {
-    padding: 64px 24px;
-    background-color: #071013;
+  font-family: "Nunito", sans-serif;
 }
 
-
-body, button {
-    font-family: 'Montserrat', sans-serif;
-}
-
-a {
-    text-decoration: none;
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #071013;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--white);
-    font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--white);
+  font-family: "Bungee", cursive;
 }
 
 header img {
-    border-radius: 50%;
-    border: 4px solid var(--white);
-    height: 128px;
-    width: 128px;
+  border-radius: 50%;
+  border: 4px solid var(--green);
+  height: 128px;
+  width: 128px;
+  margin: 40px 20px 0 0;
 }
 
 header p {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 0;
-    background: linear-gradient(70deg, #1cb0bb 13%, var(--green) 94%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Lorjuk', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 500;
+  background: linear-gradient(70deg, #1cb0bb 13%, var(--green) 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+header img:hover {
+  border-radius: 50%;
+  border: 4px solid #ccc;
 }
 
 main {
-    max-width: 600px;
-    margin: 32px auto;
+  width: 600px;
+  color: #fafafa;
+  padding: 14px;
+  margin: auto;
 }
 
 main h2 {
-    color: var(--white);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+  font-size: 2.4rem;
+  font-weight: 400;
 }
 
-main .redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 32px auto;
 }
 
-.redes-sociais .instagram{
-    color: var(--white);
-    background: linear-gradient( 45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100% );
-    min-height: 96px;
-    
+a {
+  text-decoration: none;
 }
 
-.redes-sociais .linkedin{
-    color: var(--white);
-    background: linear-gradient(90deg,rgb(86, 123, 246) 0%,rgba(47, 41, 157, 1) 100%);
-    
+main div a {
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+main div article {
+  min-height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--green);
+  background: #fafafe;
+  transition: all 0.4s ease-out;
+}
+
+main div article svg {
+  margin-right: 16px;
+}
+
+main div article:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.linkedin:hover {
+  color: #56a6f6;
+}
+
+.instagram:hover {
+  color: #cc2366;
+}
+
+.github:hover {
+  color: #0e76a8;
+}
+
+.portifolio:hover {
+  color: #8a2be2;
 }
