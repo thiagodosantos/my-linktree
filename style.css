@@ -135,3 +135,32 @@ main div article:hover {
 .portifolio:hover {
   color: #8a2be2;
 }
+
+
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 475px) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+}
